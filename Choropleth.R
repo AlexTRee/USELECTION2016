@@ -1,3 +1,16 @@
+library(readr)
+library(choroplethr)
+library(choroplethrMaps)
+library(ggplot2)
+library(ggthemes)
+library(RColorBrewer)
+library(gridExtra)
+library(dplyr)
+library(stringr)
+library(tidyr)
+
+all_results <- read_csv("https://raw.githubusercontent.com/mkearney/presidential_election_county_results_2016/master/pres16results.csv")
+
 ca <- all_results %>% 
 	 filter(str_detect(fips, "^06"))
 
