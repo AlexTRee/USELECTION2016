@@ -1,4 +1,4 @@
-)library(readr)
+library(readr)
 library(choroplethr)
 library(choroplethrMaps)
 library(ggplot2)
